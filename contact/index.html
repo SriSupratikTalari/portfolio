@@ -14,7 +14,18 @@
         <a href="https://github.com/SriSupratikTalari" target="_blank">GitHub</a>
     </nav>
 
-    <h1>Contact Me</h1>
-    <p>You can reach me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+        <label> Email:
+            <input name="email" type="email">
+        </label>
+        <label> Subject:
+            <input name="subject">
+        </label>
+        <label>
+            Body:
+            <textarea name="body" rows="5" required></textarea>
+        </label>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
