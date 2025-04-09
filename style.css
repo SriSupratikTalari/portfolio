@@ -57,3 +57,11 @@ form label {
 .projects h2 {
   margin: 0;
 }
+.projects h1 {
+  font-size: 4em;
+
+}
+.projects h1, .projects h2, .projects h3, .projects h4, .projects h5, .projects h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
