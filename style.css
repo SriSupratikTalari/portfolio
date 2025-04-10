@@ -22,10 +22,8 @@ nav a {
   padding: 0.5em;
 }
 nav a.current {
-  border-bottom: 0.4em;
-  border-bottom-color: oklch(80% 3% 200);
-  padding-bottom: 25px;
-
+  border-bottom: 0.4em solid oklch(80% 3% 200); /* thick gray underline */
+  padding-bottom: 0.1em; /* reduced padding to offset border thickness */
 }
 html {
   --color-accent: oklch(65% 50% 0);
@@ -47,7 +45,7 @@ form label {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-
+  gap: 1em;
 }
 .projects article {
   grid-template-rows: subgrid;
@@ -64,4 +62,33 @@ form label {
 .projects h1, .projects h2, .projects h3, .projects h4, .projects h5, .projects h6 {
   line-height: 1.1;
   text-wrap: balance;
+}
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 25px; /* match .current for consistent layout */
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+.resume h1 {
+  font-size: 3ex;
+  color: blue;
+  border-bottom: 1px solid oklch(80% 3% 200);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+.resume h2{
+  font-size: 2ex;
+  color: red;
+}
+.resume h3 {
+  font-size: 1ex;
+  color: blueviolet;
+}
+.resume p, .resume li, .resume time {
+  font-size: 0.5ex;
+  color: black;
+}
+.projects img {
+  max-width: 100%;
+  display: block;
+  border-radius: 0.5em; /* optional: gives a nice rounded edge look */
 }
