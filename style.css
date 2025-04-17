@@ -8,11 +8,12 @@ body {
     padding: 25px;
   }
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   margin-bottom: 1em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: oklch(80% 3% 200);
+  
 }
 nav a {
   flex: 1;
@@ -22,12 +23,13 @@ nav a {
   padding: 0.5em;
 }
 nav a.current {
-  border-bottom: 0.4em solid oklch(80% 3% 200); /* thick gray underline */
+  border-bottom: 0.4em solid var(--border-color); /* thick gray underline */
   padding-bottom: 0.1em; /* reduced padding to offset border thickness */
 }
 html {
   --color-accent: oklch(65% 50% 0);
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 input, textarea, button {
   font: inherit;
@@ -66,8 +68,7 @@ form label {
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 25px; /* match .current for consistent layout */
-  background-color: oklch(from var(--color-accent) 95% 5% h);
-}
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 .resume h1 {
   font-size: 3ex;
   color: blue;
@@ -92,3 +93,4 @@ nav a:hover {
   display: block;
   border-radius: 0.5em; /* optional: gives a nice rounded edge look */
 }
+

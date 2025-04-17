@@ -33,3 +33,16 @@ url = !url.startsWith('http') ? BASE_PATH + url : url;
 if (a.host === location.host && a.pathname === location.pathname) {
     a.classList.add('current');
   }
+  document.body.insertAdjacentHTML(
+    'afterbegin',
+    `
+    <label class="color-scheme">
+      Theme:
+      <select id="theme-switcher">
+        <option value="light dark">Automatic</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+  `
+  );
