@@ -27,11 +27,12 @@ for (let p of pages) {
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
+    if (a.host === location.host && a.pathname === location.pathname) {
+        a.classList.add('current');
+      }
     nav.append(a);
   }
-if (a.host === location.host && a.pathname === location.pathname) {
-    a.classList.add('current');
-  }
+
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
@@ -45,8 +46,22 @@ if (a.host === location.host && a.pathname === location.pathname) {
     </label>
   `
   );
-const select = document.querySelector(selector);
+// const select = document.querySelector('#theme-switcher');
+// select.addEventListener('input', function (event) {
+//     console.log('color scheme changed to', event.target.value);
+//     localStorage.colorScheme = event.target.value;
+//     if ("colorScheme" in localStorage) {
+//         select.value = localStorage.colorScheme;
+//         document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
+//       }
+//   });
+const select = document.querySelector('#theme-switcher');
+if ("colorScheme" in localStorage) {
+  select.value = localStorage.colorScheme;
+  document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
+}
 select.addEventListener('input', function (event) {
-    console.log('color scheme changed to', event.target.value);
-  });
-document.documentElement.style.setProperty('color-scheme', event.target.value);
+  console.log('color scheme changed to', event.target.value);
+  document.documentElement.style.setProperty('color-scheme', event.target.value);
+  localStorage.colorScheme = event.target.value;
+});
