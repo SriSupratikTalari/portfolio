@@ -24,7 +24,7 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
     nav.append(a);
-
+    nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
   }
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
 ? "/"                  // Local server
