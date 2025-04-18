@@ -34,8 +34,8 @@ if (a.host === location.host && a.pathname === location.pathname) {
     a.classList.add('current');
   }
   document.body.insertAdjacentHTML(
-    'afterbegin',
-    `
+    afterbegin,
+    
     <label class="color-scheme">
       Theme:
       <select id="theme-switcher">
@@ -44,7 +44,7 @@ if (a.host === location.host && a.pathname === location.pathname) {
         <option value="dark">Dark</option>
       </select>
     </label>
-  `
+  
   );
 const select = document.querySelector(selector);
 select.addEventListener('input', function (event) {
