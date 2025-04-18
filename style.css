@@ -31,8 +31,9 @@ html {
   accent-color: var(--color-accent);
   color-scheme: light dark;
 }
-input, textarea, button {
+input, textarea, button, select {
   font: inherit;
+
 }
 form {
   display: grid;
@@ -69,6 +70,7 @@ nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 25px; /* match .current for consistent layout */
   background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+}
 .resume h1 {
   font-size: 3ex;
   color: blue;
@@ -92,5 +94,13 @@ nav a:hover {
   max-width: 100%;
   display: block;
   border-radius: 0.5em; /* optional: gives a nice rounded edge look */
+}
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: inherit;
+  font-size: 80%;
+
 }
 
