@@ -32,7 +32,7 @@ for (let p of pages) {
       }
     nav.append(a);
   }
-
+//s
   document.body.insertAdjacentHTML(
     'afterbegin',
     `
