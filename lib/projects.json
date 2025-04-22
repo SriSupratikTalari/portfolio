@@ -1,27 +1,94 @@
-Array (12) = $1
-0
-{title: "Lorem ipsum dolor sit.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Lorem ipsum, dolor sit amet consectetur adipisicin… iste veniam reiciendis aperiam ab omnis quaerat."}
-1
-{title: "Cumque, veritatis praesentium! Vel?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Cum consectetur eos esse voluptatum, voluptates nu…ore. Laborum hic cumque non ullam necessitatibus!"}
-2
-{title: "Aliquam minima sit quas!", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Blanditiis beatae, dignissimos voluptates quod fug…antium assumenda dignissimos voluptatum rerum ex."}
-3
-{title: "Voluptate doloremque velit voluptatum.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Ex ratione aut numquam facere accusantium repellat…nsequuntur voluptate maxime at? Eos, perferendis!"}
-4
-{title: "Illo saepe nam iusto.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Temporibus incidunt distinctio quo dolores tempore…iciatis nulla harum? Natus quo at sint excepturi."}
-5
-{title: "Eius, ad? Repudiandae, ipsam.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Dolorem animi et similique praesentium culpa est s…tum explicabo necessitatibus tempore nulla saepe."}
-6
-{title: "Doloremque id sunt quibusdam?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Exercitationem numquam nobis maiores suscipit est …emporibus blanditiis quibusdam impedit iste nisi."}
-7
-{title: "Nesciunt dolore obcaecati quam.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Iste deleniti iusto praesentium. Aperiam sit simil…itis culpa labore odit quos architecto provident?"}
-8
-{title: "Velit officiis porro ab.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Accusamus nisi aut esse non ratione aspernatur acc…s harum nam rerum eveniet in vero necessitatibus."}
-9
-{title: "Similique facilis voluptatem doloremque!", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Eaque laborum sapiente molestiae dolor quis asperi… cum laborum optio deleniti est laboriosam dicta."}
-10
-{title: "Autem natus quis aspernatur.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Maiores, facilis provident alias sequi corrupti co…optio aperiam corporis sint culpa necessitatibus."}
-11
-{title: "Quos aspernatur tempore officiis?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Consectetur excepturi explicabo modi ab, odit cons…ias reprehenderit non nemo expedita quaerat. Sit."}
+// Array (12) = $1
+// 0
+// {title: "Lorem ipsum dolor sit.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Lorem ipsum, dolor sit amet consectetur adipisicin… iste veniam reiciendis aperiam ab omnis quaerat."}
+// 1
+// {title: "Cumque, veritatis praesentium! Vel?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Cum consectetur eos esse voluptatum, voluptates nu…ore. Laborum hic cumque non ullam necessitatibus!"}
+// 2
+// {title: "Aliquam minima sit quas!", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Blanditiis beatae, dignissimos voluptates quod fug…antium assumenda dignissimos voluptatum rerum ex."}
+// 3
+// {title: "Voluptate doloremque velit voluptatum.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Ex ratione aut numquam facere accusantium repellat…nsequuntur voluptate maxime at? Eos, perferendis!"}
+// 4
+// {title: "Illo saepe nam iusto.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Temporibus incidunt distinctio quo dolores tempore…iciatis nulla harum? Natus quo at sint excepturi."}
+// 5
+// {title: "Eius, ad? Repudiandae, ipsam.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Dolorem animi et similique praesentium culpa est s…tum explicabo necessitatibus tempore nulla saepe."}
+// 6
+// {title: "Doloremque id sunt quibusdam?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Exercitationem numquam nobis maiores suscipit est …emporibus blanditiis quibusdam impedit iste nisi."}
+// 7
+// {title: "Nesciunt dolore obcaecati quam.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Iste deleniti iusto praesentium. Aperiam sit simil…itis culpa labore odit quos architecto provident?"}
+// 8
+// {title: "Velit officiis porro ab.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Accusamus nisi aut esse non ratione aspernatur acc…s harum nam rerum eveniet in vero necessitatibus."}
+// 9
+// {title: "Similique facilis voluptatem doloremque!", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Eaque laborum sapiente molestiae dolor quis asperi… cum laborum optio deleniti est laboriosam dicta."}
+// 10
+// {title: "Autem natus quis aspernatur.", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Maiores, facilis provident alias sequi corrupti co…optio aperiam corporis sint culpa necessitatibus."}
+// 11
+// {title: "Quos aspernatur tempore officiis?", image: "https://vis-society.github.io/labs/2/images/empty.svg", description: "Consectetur excepturi explicabo modi ab, odit cons…ias reprehenderit non nemo expedita quaerat. Sit."}
 
-Array Prototype
+// Array Prototype
+
+{
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor quos, quod assumenda explicabo odio, nobis ipsa laudantium quas eum veritatis ullam sint porro minima modi molestias doloribus cumque odit."
+  },
