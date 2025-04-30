@@ -102,4 +102,10 @@ nav a:hover {
   font-size: 80%;
 
 }
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
 
