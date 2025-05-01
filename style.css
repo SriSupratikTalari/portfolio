@@ -108,4 +108,25 @@ nav a:hover {
 
   overflow: visible;
 }
+.legend .swatch {
+  aspect-ratio: 1/1;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: grid;
 
+}
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* spacing between swatch and text */
+}
+
+.container {
+  display: flex;          
+  align-items: center;     
+  gap: 20px;
+}              
