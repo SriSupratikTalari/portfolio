@@ -1,132 +1,104 @@
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
-    max-width: 100ch;
-    margin-inline: auto;
-    padding: 25px;
-  }
+  /* Set line height to 1.5 times the font size
+       and use the OS’s UI font as the website font
+     */
+  font: 100%/1.5 system-ui;
+  max-width: 100ch;
+  margin-inline: auto;
+  padding: 25px;
+}
 nav {
-  --border-color: oklch(50% 10% 200 / 40%);
-  display: flex;
-  margin-bottom: 1em;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  
+--border-color: oklch(50% 10% 200 / 40%);
+display: flex;
+margin-bottom: 1em;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+
 }
 nav a {
-  flex: 1;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  padding: 0.5em;
+flex: 1;
+text-decoration: none;
+color: inherit;
+text-align: center;
+padding: 0.5em;
 }
 nav a.current {
-  border-bottom: 0.4em solid var(--border-color); /* thick gray underline */
-  padding-bottom: 0.1em; /* reduced padding to offset border thickness */
+border-bottom: 0.4em solid var(--border-color); /* thick gray underline */
+padding-bottom: 0.1em; /* reduced padding to offset border thickness */
 }
 html {
-  --color-accent: oklch(65% 50% 0);
-  accent-color: var(--color-accent);
-  color-scheme: light dark;
+--color-accent: oklch(65% 50% 0);
+accent-color: var(--color-accent);
+color-scheme: light dark;
 }
 input, textarea, button, select {
-  font: inherit;
+font: inherit;
 
 }
 form {
-  display: grid;
-  grid-template-columns: auto 1fr;
+display: grid;
+grid-template-columns: auto 1fr;
 }
 form label {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-column: 1 / -1;
-  gap: 1em;
+display: grid;
+grid-template-columns: subgrid;
+grid-column: 1 / -1;
+gap: 1em;
 }
 .projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1em;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+gap: 1em;
 }
 .projects article {
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-  gap: 1em;
+grid-template-rows: subgrid;
+grid-row: span 3;
+gap: 1em;
 }
 .projects h2 {
-  margin: 0;
+margin: 0;
 }
 .projects h1 {
-  font-size: 4em;
+font-size: 4em;
 
 }
 .projects h1, .projects h2, .projects h3, .projects h4, .projects h5, .projects h6 {
-  line-height: 1.1;
-  text-wrap: balance;
+line-height: 1.1;
+text-wrap: balance;
 }
 nav a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
-  padding-bottom: 25px; /* match .current for consistent layout */
-  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+border-bottom: 0.4em solid var(--color-accent);
+padding-bottom: 25px; /* match .current for consistent layout */
+background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 .resume h1 {
-  font-size: 3ex;
-  color: blue;
-  border-bottom: 1px solid oklch(80% 3% 200);
-  padding-bottom: 0.3em;
-  margin-bottom: 1em;
+font-size: 3ex;
+color: blue;
+border-bottom: 1px solid oklch(80% 3% 200);
+padding-bottom: 0.3em;
+margin-bottom: 1em;
 }
 .resume h2{
-  font-size: 2ex;
-  color: red;
+font-size: 2ex;
+color: red;
 }
 .resume h3 {
-  font-size: 1ex;
-  color: blueviolet;
+font-size: 1ex;
+color: blueviolet;
 }
 .resume p, .resume li, .resume time {
-  font-size: 0.5ex;
+font-size: 0.5ex;
 }
 .projects img {
-  max-width: 100%;
-  display: block;
-  border-radius: 0.5em; /* optional: gives a nice rounded edge look */
+max-width: 100%;
+display: block;
+border-radius: 0.5em; /* optional: gives a nice rounded edge look */
 }
 .color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-family: inherit;
-  font-size: 80%;
+position: absolute;
+top: 1rem;
+right: 1rem;
+font-family: inherit;
+font-size: 80%;
 
 }
-#projects-pie-plot {
-  max-width: 20em;
-  margin-block: 2em;
-
-  overflow: visible;
-}
-.legend .swatch {
-  aspect-ratio: 1/1;
-  background-color: var(--color);
-  border-radius: 50%;
-  display: grid;
-
-}
-.legend {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
-}
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.5em; /* spacing between swatch and text */
-}
-
-.container {
-  display: flex;          
-  align-items: center;     
-  gap: 20px;
-}              
