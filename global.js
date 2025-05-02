@@ -79,15 +79,21 @@ export async function fetchJSON(url) {
   }
 }
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-  containerElement.innerHTML = '';
+  containerElement.innerHTML = ''; // Clear previous content
 
   for (const project of projects) {
+    // Create the article element for each project
     const article = document.createElement('article');
+    
+    // Construct the project HTML, including the year
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
       <img src="${project.image}" alt="${project.title}">
       <p>${project.description}</p>
+      <p class="project-year">Year: ${project.year}</p> <!-- Display year -->
     `;
+    
+    // Append the article to the container
     containerElement.appendChild(article);
   }
 }

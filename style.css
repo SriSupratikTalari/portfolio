@@ -102,3 +102,45 @@ font-family: inherit;
 font-size: 80%;
 
 }
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+.container {
+  display: flex;
+  align-items: flex-start; /* Adjust alignment of the pie chart and legend */
+  gap: 2em; /* Space between pie chart and legend */
+  margin: 2em auto;
+  max-width: 1200px; /* Optional: to limit the width of the entire container */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.legend {
+  flex: 1; /* Makes the legend take the available space */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  background: #f9f9f9;
+  list-style: none;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: sans-serif;
+}
+
+.legend-item .swatch {
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 0.25em;
+  display: inline-block;
+}
