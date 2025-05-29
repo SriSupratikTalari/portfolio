@@ -313,3 +313,19 @@ document.getElementById("commit-progress").addEventListener("input", onTimeSlide
 
 // Call once on load to initialize
 onTimeSliderChange();
+let lines = filteredCommits.flatMap((d) => d.lines);
+let files = d3
+  .groups(lines, (d) => d.file)
+  .map(([name, lines]) => {
+    return { name, lines };
+  });
+
+let filesContainer = d3.select('#files').selectAll('div').data(files, (d) => d.name).join((enter) =>enter.append('div').call((div) => {div.append('dt').append('code'); div.append('dd');}),);
+filesContainer.select('dt > code').text((d) => d.name);
+filesContainer.select('dd').text((d) => `${d.lines.length} lines`);
+filesContainer
+  .select('dd')
+  .selectAll('div')
+  .data((d) => d.lines)
+  .join('div')
+  .attr('class', 'loc');
